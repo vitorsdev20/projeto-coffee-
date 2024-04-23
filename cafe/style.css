@@ -1,0 +1,325 @@
+body{
+    background-color: black;
+}
+:root{
+    --main-color: #88653ec9;
+    --back-color: #5A2E2E;
+    --black: #221909;
+    --bg: #030308;
+    --border:.1rem solid #ffffff4d;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: .2s linear;
+
+}
+
+header{
+    background-color: var(--bg);
+    border-bottom: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+}
+header img{
+    height: 6rem;
+}
+header .navbar a{
+    margin: 1rem;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+header.rolagem{
+    background-color: var(--main-color);
+    padding: 20px 4%;
+
+ }
+header.rolagem a{
+    color: rgb(0, 0, 0);
+ }
+header ul{
+    list-style-type: none;
+}
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+header ul li a{
+    color: rgb(29, 109, 179);
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+   background-image: url(imagens/pexels-on-shot-2788792.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .conteudo {
+    max-width: 60rem;
+    padding-left: 2rem;
+}
+.home .conteudo h3{
+    font-size: 6rem;
+    color: var(--main-color);
+}
+.home .conteudo p{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color:  var(--main-color);
+    cursor: pointer;
+}
+.btn:hover{
+    letter-spacing: .1rem;
+    background-color: var(--main-color);
+}
+.sobre .conteudo2{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.foto_sobre{
+    width: 100%;
+    height: 400px;
+    margin-right: 1rem;
+   
+}
+.foto_sobre img{
+    width: 100%;
+}
+.sobre .conteudo2 .texto_sobre p{
+    font-size: 1.2rem;
+    color: #ccc;
+    line-height: 1.8;
+}
+.sobre .conteudo2 h3{
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    padding-top: 3.5rem;
+    font-size: 3rem;
+}
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.menu_promocoes .box_container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+.menu_promocoes .box_container .box{
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+  
+}
+.menu_promocoes .box_container .box h3{
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+.menu_promocoes .box_container .box .preco{
+    color: #fff;
+    font-size: 1.2rem;
+    padding: .5rem.0;
+}
+.menu_promocoes .box_container .box .preco span{
+    font-size: .9rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+.menu_promocoes .box_container .box:hover{
+    background-color: #fff;
+}
+.menu_promocoes .box_container .box:hover > *{
+  color: var(--black);
+}
+.box{
+    border-radius: 20px;
+}
+.contato{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+}
+.contato .row{
+    display: flex;
+    background-color: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 20px;
+}
+.contato .row .map{
+    flex: 1 1 45rem;
+    object-fit: cover;
+}
+.contato .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+.contato .row h3{
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #fff;
+}
+.contato .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--bg);
+    border: var(--border);
+}
+.contato .row form .inputBox input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background: none;
+}
+.ambiente{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+}
+.ambiente .box-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+.ambiente .box-container .box{
+    border: var(--border);
+    margin-bottom: 20px;
+}
+
+.ambiente .box-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+.ambiente .box-container .box .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ambiente .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+.footer{
+    background-color: var(--black);
+    text-align: center;
+}
+.footer .redes{
+    padding: 1rem.0;
+}
+.footer .redes a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    margin: 3rem;
+    border-radius: 50%;
+}
+.footer .redes a:hover{
+    background-color: var(--main-color);
+}
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem.0;
+    gap: 1rem;
+}
+.footer .links a{
+    padding: .7rem 2rem;
+    color: #fff;
+    border: var(--border);
+    font-size: 2rem;
+} 
+.footer .links a:hover{
+    background-color: var(--main-color);
+}
+.credit{
+    color: #fff;
+    padding-bottom: 10px;
+  
+}
+html{
+    scroll-behavior: smooth;
+}
+@media (max-width:768px) {
+    header .navbar{
+        display: none;
+    }
+    header .logo{
+        margin-left: 33%;
+    }
+     .sobre .conteudo2 {
+        display: block;
+    }
+     .sobre .conteudo2 {
+        width: 100%;
+        height: 100%;
+    }
+    .menu_promocoes .box_container{
+        display: block;
+    }
+    .menu_promocoes .box_container .box{
+        display: block;
+        margin-top: 10px;
+    }
+    .ambiente .box-container{
+        display: block;
+    }
+    .footer .links a{
+        width: 80%;
+        font-size: 20px;
+    }
+    
+    
+    }
+
+ 
